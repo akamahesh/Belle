@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="com.akamahesh.belle">
+
+  <application
+    android:allowBackup="true"
+    android:icon="@mipmap/ic_launcher"
+    android:label="@string/app_name"
+    android:roundIcon="@mipmap/ic_launcher"
+    android:supportsRtl="true"
+    android:theme="@style/AppTheme">
+    <activity
+      android:label="@string/app_name"
+      android:name=".MainActivity"
+      android:theme="@style/AppTheme.NoActionBar">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+
+        <category android:name="android.intent.category.LAUNCHER"/>
+      </intent-filter>
+    </activity>
+    <activity
+      android:name=".ui.uplabs_news.NewsActivity"
+      android:theme="@style/AppTheme.NoActionBar"/>
+    <activity android:name=".ui.infinite_scroll.InfiniteScrollActivity"/>
+    <activity android:name=".ui.script.ScriptActivity"/>
+    <activity android:name=".ui.dynamic_views.DynamicActivity">
+    </activity>
+    <activity
+      android:label="@string/title_activity_constraint"
+      android:name=".ui.constraint_designs.ConstraintActivity"
+      android:theme="@style/AppTheme.NoActionBar">
+    </activity>
+    <activity android:name=".ui.sliding_login.LoginActivity">
+    </activity>
+  </application>
+
+</manifest>

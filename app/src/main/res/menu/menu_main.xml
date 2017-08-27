@@ -1,0 +1,36 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  tools:context="com.akamahesh.belle.MainActivity">
+  <item
+    android:id="@+id/action_news"
+    android:orderInCategory="100"
+    android:title="Uplabs-News"
+    app:showAsAction="never"/>
+
+  <item
+    android:id="@+id/action_infinite_scroll"
+    android:orderInCategory="100"
+    android:title="Infinite-Scroll"
+    app:showAsAction="never"/>
+  <item
+    android:id="@+id/action_script"
+    android:orderInCategory="100"
+    android:title="Script"
+    app:showAsAction="never"/>
+  <item
+    android:id="@+id/action_dynamic"
+    android:orderInCategory="100"
+    android:title="Dynamic View"
+    app:showAsAction="never"/>
+  <item
+    android:id="@+id/action_constraint"
+    android:orderInCategory="100"
+    android:title="Constraint layout"
+    app:showAsAction="never"/>
+  <item
+    android:id="@+id/action_login"
+    android:orderInCategory="100"
+    android:title="Login Medium"
+    app:showAsAction="never"/>
+</menu>

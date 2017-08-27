@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  app:layout_behavior="@string/appbar_scrolling_view_behavior"
+  tools:context="com.akamahesh.belle.ui.constraint_designs.ConstraintActivity"
+  tools:showIn="@layout/activity_constraint">
+
+
+  <TextView
+    android:id="@+id/label_a"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:text="A"
+    android:textSize="28dp"
+    app:layout_constraintEnd_toStartOf="@+id/label_b"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:gravity="center"
+    app:layout_constraintHorizontal_chainStyle="spread_inside"
+    />
+  <TextView
+    android:id="@+id/label_b"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:text="B"
+    android:textSize="28dp"
+    android:gravity="center"
+    app:layout_constraintEnd_toStartOf="@+id/label_c"
+    app:layout_constraintStart_toEndOf="@+id/label_a"
+    app:layout_constraintBaseline_toBaselineOf="@+id/label_a"
+    />
+  <TextView
+    android:id="@+id/label_c"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:text="C"
+    android:gravity="center"
+    android:textSize="28dp"
+    app:layout_constraintBaseline_toBaselineOf="@+id/label_a"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toEndOf="@+id/label_b"
+    />
+
+</android.support.constraint.ConstraintLayout>
